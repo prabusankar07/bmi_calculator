@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="css/style1.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+	<div class="main-container">
+		<div class="content-holder">
+			<div class="img-container">
+		<img id="image" class="human-default-img" src="images/men.png">
+			<div id="result">						
+			</div>
+		</div>
+		<div class="value-holder">
+			<div class="value-container">
+				<p class="bmi-value" id="bmivalue">255</p>
+			</div>
+		</div>
+		<div class="btn-gender">
+			<div class="btn-pos">
+   				<button type="button" class="malebutton selected" id="male" >
+        			<img class="icon-btn" src="images/maleicon.png">
+   				</button>
+	    	</div>
+		    <div class="btn-pos-female" >
+		        <button type="button" class="malebutton1" id="female">
+		            <img class="icon-btn" src="images/femaleicon.png">
+		       	</button>
+		    </div>
+	    </div>
+		<div class="form-holder">
+		 	<form  action="" >         
+	         <span class="content">Height in cm:</span> <input type="text" name="height" id="height" class="input-text" value="150" ><br>
+	           <input type="range" id="bmiRangeHeight" value="150" min="50" max="200" step="1" ><br>
+	             <span class="content">Weight in kg:</span> <input type="text" name="weight" id="weight" value="65" class="input-text" ><br>
+	            <input type="range" id="bmiRangeWeight" value="65" min="50" max="200" step="1""><br>			           
+	            <div class="ageHolder"><p class="ageSelected content">Age</p>
+	                <button type="button" class="agebutton selected1 agefactor" id="veryYoung" >
+	                    <img class="icon-btn1" src="images/age1.png">19-24
+	                </button>   
+	                <button type="button" class="agebutton agefactor" id="young" >
+	                    <img class="icon-btn1" src="images/age6.png">25-34
+	                </button>
+	                <button type="button" class="agebutton agefactor" id="adult" >
+	                    <img class="icon-btn1" src="images/age5.png">35-44
+	                </button>
+	                <button type="button" class="agebutton agefactor" id="midadult" >
+	                    <img class="icon-btn1" src="images/age4.png">45-54
+	                </button>
+	                <button type="button" class="agebutton agefactor" id="old" >
+	                    <img class="icon-btn1" src="images/age3.png">55-64
+	                </button>
+	                <button type="button" class="agebutton agefactor" id="veryold" >
+	                    <img class="icon-btn1" src="images/age2.png">>65
+	                </button>			                
+	           </div>
+	  				<input type="text" name="age" id="age" value="20" hidden="" ><br>  
+	   			</form> 
+    		</div>
+		</div>			
+	</div>
+		
+   
+</body>
+</html>
